@@ -10,6 +10,7 @@ Despite national efforts to vaccinate the population against COVID-19, vaccinati
 Furthermore, a lack of real-time, data-driven analysis limits targeted interventions by hospitals, NGOs, and government agencies. This project provides actionable insights into these disparities using official data from the Kenya Ministry of Health (MoH).
 
 🎯 **Project Objectives**
+
 Determine the overall COVID-19 vaccination rate across Kenya
 
 Identify counties with the highest and lowest uptake
@@ -31,7 +32,9 @@ Highlight underserved or under-vaccinated population groups
 Provide data-driven recommendations for public health outreach
 
 🗂️ **Data Source**
+
 Ministry of Health Kenya (MoH)
+
 Use Daily Situation Reports and Vaccination Updates from the Newsroom or Publications sections.
 
 Key Data Points Include:
@@ -45,39 +48,51 @@ Dose type (1st, 2nd, booster)
 Occasionally includes gender and age demographics
 
 🧰 **Tools Used**
-Tool	Purpose
-Excel	Data cleaning, summarization, pivot tables
-Python	(pandas, matplotlib, seaborn) for trend analysis and visuals
-SQL	Query vaccine data, join with population/health data
-Tableau	Interactive dashboards and geographic visualization
+
+Tool-Purpose
+
+Excel-	Data cleaning, summarization, pivot tables
+
+Python-	(pandas, matplotlib, seaborn) for trend analysis and visuals
+
+SQL	Query -vaccine data, join with population/health data
+
+Tableau	-Interactive dashboards and geographic visualization
 
 📊 **Key Analyses to Perform**
+
 1. County-Level Uptake Trends
+
 Line graphs showing vaccination rates over time
 
 Choropleth maps for county-level coverage
 
 2. Equity Analysis
+
 Compare rural vs. urban vaccination rates
 
 Correlate uptake with population size and health facility access
 
 3. Dose Type Analysis
+
 Breakdown of 1st, 2nd, and booster doses
 
 Visualize booster dose lag across counties
 
 4. Demographic Analysis (if available)
+
 Gender and age distribution of vaccinated individuals
 
 Identify underserved groups
 
 5. Public Health Insights
+
 Highlight counties below national average
 
 Recommend priority areas for intervention (NGOs, hospitals, MoH)
 
-📈 Tableau Dashboard Ideas
+📈 **Tableau Dashboard Ideas**
+
 Choropleth Map: Vaccine uptake by county
 
 Line Charts: Daily/weekly doses by county
