@@ -1,12 +1,15 @@
 # COVID-VACCINES-ANALYSIS
 Analyzes COVID-19 vaccine uptake across Kenya’s counties using MoH data to identify trends, disparities, and underserved regions. Uses Python, SQL, Excel, and Tableau to support public health planning and equitable vaccine distribution.
-📊 COVID-19 Vaccination Uptake and Equity Analysis in Kenya
-🔎 Problem Statement
+
+📊**COVID-19 Vaccination Uptake and Equity Analysis in Kenya**
+
+🔎 **Problem Statement**
+
 Despite national efforts to vaccinate the population against COVID-19, vaccination uptake in Kenya has been uneven across counties. Disparities exist between rural and urban regions, age groups, and genders. These inequities hinder the country’s progress toward herd immunity, protect vulnerable populations less effectively, and complicate efficient vaccine allocation.
 
 Furthermore, a lack of real-time, data-driven analysis limits targeted interventions by hospitals, NGOs, and government agencies. This project provides actionable insights into these disparities using official data from the Kenya Ministry of Health (MoH).
 
-🎯 Project Objectives
+🎯 **Project Objectives**
 Determine the overall COVID-19 vaccination rate across Kenya
 
 Identify counties with the highest and lowest uptake
@@ -27,7 +30,7 @@ Highlight underserved or under-vaccinated population groups
 
 Provide data-driven recommendations for public health outreach
 
-🗂️ Data Source
+🗂️ **Data Source**
 Ministry of Health Kenya (MoH)
 Use Daily Situation Reports and Vaccination Updates from the Newsroom or Publications sections.
 
@@ -41,25 +44,14 @@ Dose type (1st, 2nd, booster)
 
 Occasionally includes gender and age demographics
 
-📌 Key Research Questions
-What is the overall vaccination rate across Kenya?
-
-Which counties have the highest and lowest uptake?
-
-How does vaccine uptake vary by gender or age (if data is available)?
-
-Are there geographic or demographic inequities in vaccine distribution?
-
-How can this data inform public health planning and outreach efforts?
-
-🧰 Tools Used
+🧰 **Tools Used**
 Tool	Purpose
 Excel	Data cleaning, summarization, pivot tables
 Python	(pandas, matplotlib, seaborn) for trend analysis and visuals
 SQL	Query vaccine data, join with population/health data
 Tableau	Interactive dashboards and geographic visualization
 
-📊 Key Analyses to Perform
+📊 **Key Analyses to Perform**
 1. County-Level Uptake Trends
 Line graphs showing vaccination rates over time
 
@@ -94,7 +86,7 @@ Bar Charts: Top 10 and bottom 10 counties
 
 Filters: Dose type, gender, age group (if available)
 
-📦 Deliverables
+📦 **Deliverables**
 ✅ Cleaned Dataset: County-level COVID-19 vaccination data
 
 ✅ SQL Scripts: Queries for uptake analysis and regional comparisons
@@ -105,9 +97,12 @@ Filters: Dose type, gender, age group (if available)
 
 ✅ Summary Report: Findings, visuals, and recommendations
 
-🧠 Stakeholder Impact
-Stakeholder	Benefit
-Hospitals	Forecast vaccine demand, plan staffing and logistics
-NGOs	Target regions for outreach and vaccination campaigns
-Pharmaceuticals	Monitor vaccine supply and demand by region
-MoH/Government	Track rollout progress, promote equitable distribution
+🧠 **Stakeholder Impact**
+**Stakeholder	Benefit**
+-Hospitals	Forecast vaccine demand, plan staffing and logistics
+
+-NGOs	Target regions for outreach and vaccination campaigns
+
+-Pharmaceuticals	Monitor vaccine supply and demand by region
+
+-MoH/Government	Track rollout progress, promote equitable distribution
