@@ -87,6 +87,7 @@ Bar Charts: Top 10 and bottom 10 counties
 Filters: Dose type, gender, age group (if available)
 
 📦 **Deliverables**
+
 ✅ Cleaned Dataset: County-level COVID-19 vaccination data
 
 ✅ SQL Scripts: Queries for uptake analysis and regional comparisons
@@ -98,7 +99,9 @@ Filters: Dose type, gender, age group (if available)
 ✅ Summary Report: Findings, visuals, and recommendations
 
 🧠 **Stakeholder Impact**
+
 **Stakeholder	Benefit**
+
 -Hospitals	Forecast vaccine demand, plan staffing and logistics
 
 -NGOs	Target regions for outreach and vaccination campaigns
