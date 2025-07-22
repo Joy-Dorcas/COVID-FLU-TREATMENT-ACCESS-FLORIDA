@@ -2,7 +2,7 @@
 
 Analyzes therapeutic access for COVID-19 and flu across Florida using public health provider data to identify geographic treatment gaps, provider disparities, and government program participation. Leverages Tableau for geospatial dashboards and granular availability analysis to inform equitable resource distribution and public health planning.
 
----
+
 
 ## 🔍 Problem Statement
 
@@ -12,7 +12,7 @@ Despite the availability of **USG-supported programs** like **PAP (Patient Assis
 
 This project uses provider-level therapeutic availability data to explore access inequalities, identify underserved areas, and guide data-driven public health response efforts across Florida.
 
----
+
 
 ## 🎯 Project Objectives
 
@@ -25,7 +25,6 @@ This project uses provider-level therapeutic availability data to explore access
 - Assess commercial vs. government-supplied product distribution  
 - Recommend focus areas for health policy or outreach efforts  
 
----
 
 ## 🗂️ Data Source
 
@@ -42,7 +41,7 @@ This project uses provider-level therapeutic availability data to explore access
 - Has Baloxavir, Zanamivir, Peramivir  
 - Is COVID-19 Site / Is Flu Site  
 
----
+
 
 ## 🧰 Tools Used
 
@@ -53,7 +52,6 @@ This project uses provider-level therapeutic availability data to explore access
 | SQL     | Querying joined demographic or ZIP datasets (optional)|
 | Python  | Generating calculated fields or clustering (optional) |
 
----
 
 ## 📊 Key Analyses to Perform
 
@@ -64,7 +62,7 @@ This project uses provider-level therapeutic availability data to explore access
 - Apply filters for **PAP** and **ICATT** participation
 - Use **density maps** to reveal underserved rural areas
 
----
+
 
 ### 2. 🏥 Provider Type Analysis
 
@@ -76,7 +74,7 @@ This project uses provider-level therapeutic availability data to explore access
   - PAP participation
   - Flu vs COVID coverage
 
----
+
 
 ### 3. 🔁 Flu vs. COVID Treatment Coverage
 
@@ -86,7 +84,7 @@ This project uses provider-level therapeutic availability data to explore access
   - Both
 - Use **stacked bar charts** or **matrix visuals** for comparison
 
----
+
 
 ### 4. 🧪 PAP / ICATT Program Participation
 
@@ -96,7 +94,7 @@ This project uses provider-level therapeutic availability data to explore access
 - Compare against therapeutic availability
 - Identify gaps where providers lack USG support
 
----
+
 
 ### 5. 🧮 Commercial vs. USG Product Analysis
 
@@ -104,7 +102,6 @@ This project uses provider-level therapeutic availability data to explore access
 - Identify providers stocking **only commercial products**
 - Highlight **distribution equity issues**
 
----
 
 ## 📈 Tableau Dashboard Ideas
 
@@ -118,7 +115,7 @@ This project uses provider-level therapeutic availability data to explore access
 | 🔬 USG vs Commercial   | Side-by-side comparison of supply source                       |
 | 📌 ZIP Code Gaps       | Highlight areas with no access to COVID/flu treatments         |
 
----
+
 
 ## 📦 Deliverables
 
@@ -127,7 +124,7 @@ This project uses provider-level therapeutic availability data to explore access
 - ✅ KPI summary cards for executive insights
 - ✅ PDF/Slide report with visuals, gaps, and strategic recommendations
 
----
+
 
 ## 🧠 Stakeholder Impact
 
@@ -138,7 +135,6 @@ This project uses provider-level therapeutic availability data to explore access
 | **NGOs / Clinics**   | Target outreach to underserved ZIPs                                     |
 | **Public Health Researchers** | Study systemic gaps in access and policy effectiveness             |
 
----
 
 ## 📁 Project Structure (Optional)
 
