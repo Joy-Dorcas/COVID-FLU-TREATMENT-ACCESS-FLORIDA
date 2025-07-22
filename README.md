@@ -1,126 +1,158 @@
-# COVID-VACCINES-ANALYSIS
-Analyzes COVID-19 vaccine uptake across Kenya’s counties using MoH data to identify trends, disparities, and underserved regions. Uses Python, SQL, Excel, and Tableau to support public health planning and equitable vaccine distribution.
+# 📊 COVID-FLU-TREATMENT-ACCESS-FLORIDA
 
-📊**COVID-19 Vaccination Uptake and Equity Analysis in Kenya**
+Analyzes therapeutic access for COVID-19 and flu across Florida using public health provider data to identify geographic treatment gaps, provider disparities, and government program participation. Leverages Tableau for geospatial dashboards and granular availability analysis to inform equitable resource distribution and public health planning.
 
-🔎 **Problem Statement**
+---
 
-Despite national efforts to vaccinate the population against COVID-19, vaccination uptake in Kenya has been uneven across counties. Disparities exist between rural and urban regions, age groups, and genders. These inequities hinder the country’s progress toward herd immunity, protect vulnerable populations less effectively, and complicate efficient vaccine allocation.
+## 🔍 Problem Statement
 
-Furthermore, a lack of real-time, data-driven analysis limits targeted interventions by hospitals, NGOs, and government agencies. This project provides actionable insights into these disparities using official data from the Kenya Ministry of Health (MoH).
+While COVID-19 and flu remain persistent threats to public health, access to treatments like **Paxlovid**, **Lagevrio**, and **Tamiflu** varies widely across Florida. Certain communities, particularly rural areas, may lack nearby providers with available therapeutics, creating **treatment deserts** that put vulnerable populations at risk.
 
-🎯 **Project Objectives**
+Despite the availability of **USG-supported programs** like **PAP (Patient Assistance Program)** and **ICATT (Increasing Community Access to Testing)**, participation among pharmacy providers remains inconsistent. Similarly, some major pharmacy chains stock treatments more consistently than others. There is limited transparency around these access patterns.
 
-Determine the overall COVID-19 vaccination rate across Kenya
+This project uses provider-level therapeutic availability data to explore access inequalities, identify underserved areas, and guide data-driven public health response efforts across Florida.
 
-Identify counties with the highest and lowest uptake
+---
 
-Evaluate vaccine uptake variation by gender or age (if demographic data is available)
+## 🎯 Project Objectives
 
-Assess geographic and demographic inequities in vaccine distribution
+- Map COVID-19 and flu treatment availability across Florida  
+- Identify underserved counties or ZIP codes lacking access to key therapeutics  
+- Compare provider participation in PAP and ICATT programs  
+- Analyze availability trends by pharmacy chain (CVS, Walgreens, Publix, etc.)  
+- Determine overlap of providers offering both flu and COVID-19 treatments  
+- Reveal geographic clusters of low access to Paxlovid, Lagevrio, or Tamiflu  
+- Assess commercial vs. government-supplied product distribution  
+- Recommend focus areas for health policy or outreach efforts  
 
-Analyze trends in vaccine uptake across Kenya’s 47 counties over time
+---
 
-Compare vaccination rates between rural vs. urban counties
+## 🗂️ Data Source
 
-Break down uptake by dose type (1st, 2nd, booster)
+**Source:** HHS (Health and Human Services) Provider Therapeutics Data (Extracted Sample)  
 
-Identify counties lagging in booster coverage
+**Key Columns:**
 
-Highlight underserved or under-vaccinated population groups
+- Provider Name, City, State, Latitude, Longitude  
+- Is PAP Site / Is ICATT Site  
+- Has Paxlovid / Has USG Paxlovid / Has Commercial Paxlovid  
+- Has Lagevrio / Has USG Lagevrio / Has Commercial Lagevrio  
+- Has Veklury  
+- Has Oseltamivir (Generic / Suspension / Tamiflu)  
+- Has Baloxavir, Zanamivir, Peramivir  
+- Is COVID-19 Site / Is Flu Site  
 
-Provide data-driven recommendations for public health outreach
+---
 
-🗂️ **Data Source**
+## 🧰 Tools Used
 
-Ministry of Health Kenya (MoH)
+| Tool    | Purpose                                               |
+|---------|-------------------------------------------------------|
+| Excel   | Data cleaning, recoding pharmacy chains               |
+| Tableau | Interactive dashboards, geographic and KPI analysis   |
+| SQL     | Querying joined demographic or ZIP datasets (optional)|
+| Python  | Generating calculated fields or clustering (optional) |
 
-Use Daily Situation Reports and Vaccination Updates from the Newsroom or Publications sections.
+---
 
-Key Data Points Include:
+## 📊 Key Analyses to Perform
 
-Daily and cumulative vaccine doses administered
+### 1. 📍 Geographic Access & Treatment Gaps
 
-County-level breakdown
+- Map Florida providers using **latitude/longitude**
+- Color-code by treatment availability (Paxlovid, Lagevrio, Veklury)
+- Apply filters for **PAP** and **ICATT** participation
+- Use **density maps** to reveal underserved rural areas
 
-Dose type (1st, 2nd, booster)
+---
 
-Occasionally includes gender and age demographics
+### 2. 🏥 Provider Type Analysis
 
-🧰 **Tools Used**
+- Create calculated field for **Pharmacy Chain Name**  
+  (_e.g., if “CVS” in name → "CVS"_)
+- Compare treatment availability by chain
+- Rank chains by:
+  - Paxlovid availability
+  - PAP participation
+  - Flu vs COVID coverage
 
-Tool-Purpose
+---
 
-Excel-	Data cleaning, summarization, pivot tables
+### 3. 🔁 Flu vs. COVID Treatment Coverage
 
-Python-	(pandas, matplotlib, seaborn) for trend analysis and visuals
+- Classify sites as offering:
+  - Only Flu
+  - Only COVID
+  - Both
+- Use **stacked bar charts** or **matrix visuals** for comparison
 
-SQL	Query -vaccine data, join with population/health data
+---
 
-Tableau	-Interactive dashboards and geographic visualization
+### 4. 🧪 PAP / ICATT Program Participation
 
-📊 **Key Analyses to Perform**
+- Visualize participation by:
+  - City / ZIP code
+  - Provider chain
+- Compare against therapeutic availability
+- Identify gaps where providers lack USG support
 
-1. County-Level Uptake Trends
+---
 
-Line graphs showing vaccination rates over time
+### 5. 🧮 Commercial vs. USG Product Analysis
 
-Choropleth maps for county-level coverage
+- Side-by-side bar charts comparing **commercial vs USG** product stock
+- Identify providers stocking **only commercial products**
+- Highlight **distribution equity issues**
 
-2. Equity Analysis
+---
 
-Compare rural vs. urban vaccination rates
+## 📈 Tableau Dashboard Ideas
 
-Correlate uptake with population size and health facility access
+| Component               | Description                                                   |
+|------------------------|---------------------------------------------------------------|
+| 🌍 Interactive Map     | Plot providers with color/shape filters for treatment access  |
+| 📊 Bar Chart by Pharmacy | Compare availability by chain (CVS, Walgreens, etc.)         |
+| 🧾 KPI Cards           | Show % with Paxlovid, % in PAP, % with both treatments         |
+| 🧱 Matrix Heatmap      | Provider vs. medications (binary availability)                 |
+| 🔁 Flu vs COVID Chart  | Pie or bar chart: providers by treatment type                 |
+| 🔬 USG vs Commercial   | Side-by-side comparison of supply source                       |
+| 📌 ZIP Code Gaps       | Highlight areas with no access to COVID/flu treatments         |
 
-3. Dose Type Analysis
+---
 
-Breakdown of 1st, 2nd, and booster doses
+## 📦 Deliverables
 
-Visualize booster dose lag across counties
+- ✅ Cleaned and enriched dataset (ZIP codes, geocoding, pharmacy classification)
+- ✅ Tableau dashboard with multiple interactive views
+- ✅ KPI summary cards for executive insights
+- ✅ PDF/Slide report with visuals, gaps, and strategic recommendations
 
-4. Demographic Analysis (if available)
+---
 
-Gender and age distribution of vaccinated individuals
+## 🧠 Stakeholder Impact
 
-Identify underserved groups
+| Stakeholder          | Benefit                                                                 |
+|----------------------|-------------------------------------------------------------------------|
+| **Florida DOH**      | Identify underserved areas, plan drug distribution, ICATT/PAP expansion |
+| **Pharmacy Chains**  | Benchmark against competitors, increase participation visibility        |
+| **NGOs / Clinics**   | Target outreach to underserved ZIPs                                     |
+| **Public Health Researchers** | Study systemic gaps in access and policy effectiveness             |
 
-5. Public Health Insights
+---
 
-Highlight counties below national average
+## 📁 Project Structure (Optional)
 
-Recommend priority areas for intervention (NGOs, hospitals, MoH)
+```bash
+.
+├── README.md
+├── /data
+│   ├── cleaned_provider_data.xlsx
+│   └── raw_provider_sample.csv
+├── /tableau
+│   └── covid_flu_dashboard.twbx
+├── /docs
+│   ├── summary_slide_deck.pdf
+│   └── treatment_gap_analysis.pdf
 
-📈 **Tableau Dashboard Ideas**
-
-Choropleth Map: Vaccine uptake by county
-
-Line Charts: Daily/weekly doses by county
-
-Bar Charts: Top 10 and bottom 10 counties
-
-Filters: Dose type, gender, age group (if available)
-
-📦 **Deliverables**
-
-✅ Cleaned Dataset: County-level COVID-19 vaccination data
-
-✅ SQL Scripts: Queries for uptake analysis and regional comparisons
-
-✅ Python Notebook: Trend and equity analysis with visualizations
-
-✅ Tableau Dashboard: Interactive data visualization tool
-
-✅ Summary Report: Findings, visuals, and recommendations
-
-🧠 **Stakeholder Impact**
-
-**Stakeholder	Benefit**
-
--Hospitals	Forecast vaccine demand, plan staffing and logistics
-
--NGOs	Target regions for outreach and vaccination campaigns
-
--Pharmaceuticals	Monitor vaccine supply and demand by region
 
 -MoH/Government	Track rollout progress, promote equitable distribution
